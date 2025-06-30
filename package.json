@@ -1,0 +1,76 @@
+{
+  "name": "ccs",
+  "version": "1.0.0",
+  "description": "Turn any codebase into an AI-aware environment. Claude launches with full context, asks smart questions, and gets better with every interaction.",
+  "main": "lib/index.js",
+  "bin": {
+    "ccs": "bin/ccs.js"
+  },
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:bootstrap": "node bin/test-bootstrap.js",
+    "dev": "nodemon bin/ccs.js",
+    "build": "echo 'No build step needed'",
+    "lint": "eslint lib/ bin/ adapters/ operations/",
+    "example": "node examples/basic-usage.js",
+    "bootstrap": "npm run test:bootstrap",
+    "self-improve": "node bin/ccs.js run self-bootstrap",
+    "learn": "node bin/ccs.js run learn",
+    "feedback": "node bin/ccs.js run feedback",
+    "prepublishOnly": "npm test && npm run lint",
+    "postinstall": "echo '🎉 ccs installed! Run: ccs setup'"
+  },
+  "keywords": [
+    "claude",
+    "ai",
+    "context",
+    "cli",
+    "development",
+    "automation",
+    "assistant",
+    "claude-ai",
+    "anthropic",
+    "context-management",
+    "learning-system",
+    "sqlite",
+    "developer-tools"
+  ],
+  "author": "ThetaDriven Team",
+  "license": "MIT",
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "dependencies": {
+    "commander": "^11.0.0",
+    "glob": "^10.3.0",
+    "handlebars": "^4.7.8",
+    "yaml": "^2.3.0",
+    "chalk": "^4.1.2",
+    "inquirer": "^8.2.6",
+    "chokidar": "^3.5.3",
+    "fast-json-stable-stringify": "^2.1.0"
+  },
+  "devDependencies": {
+    "jest": "^29.0.0",
+    "nodemon": "^3.0.0",
+    "eslint": "^8.0.0"
+  },
+  "files": [
+    "lib/",
+    "bin/",
+    "adapters/",
+    "operations/",
+    "templates/",
+    "README.md",
+    "LICENSE"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wiber/ccs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/wiber/ccs/issues"
+  },
+  "homepage": "https://github.com/wiber/ccs#readme"
+}

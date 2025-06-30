@@ -1,0 +1,26 @@
+{
+  "codeQuality": {
+    "issues": [],
+    "totalFiles": 0
+  },
+  "performance": {
+    "issues": []
+  },
+  "patterns": {
+    "duplicatedCode": [],
+    "missingPatterns": [
+      "learning_engine_integration",
+      "feedback_loop_integration"
+    ],
+    "improvementOpportunities": []
+  },
+  "dependencies": {
+    "error": "ENOENT: no such file or directory, open 'thetadrivencoach/claude-context-engine/package.json'"
+  },
+  "testCoverage": {
+    "testFiles": 0,
+    "libFiles": 0,
+    "coverageRatio": null,
+    "missingTests": []
+  }
+}
