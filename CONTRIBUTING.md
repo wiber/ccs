@@ -2,6 +2,64 @@
 
 Thank you for your interest in contributing to CCS! We value contributions from developers who understand the importance of context-aware AI assistance.
 
+## Getting Started
+
+Before contributing, we recommend:
+1. Run the self-bootstrap operation to understand our recursive improvement philosophy
+2. Examine the Learning Engine to see how we track operation effectiveness  
+3. Try optimizing the Stream Processor benchmark (hint: current best is 5ms/entry)
+
+## Contribution Process
+
+### Level 1: Bug Fixes & Documentation
+- Fix typos or clarify documentation
+- Resolve TODO comments with context-aware solutions
+- Improve error messages to be more actionable
+- Add missing JSDoc comments
+
+### Level 2: Performance Enhancements
+- Optimize hot paths identified by the metrics system
+- Reduce memory usage while maintaining functionality
+- Improve SQLite query patterns and indexing strategies
+- Enhance stream processing throughput
+
+### Level 3: Architectural Improvements
+- Extend the Learning Engine with new pattern recognition
+- Add new operations that compose existing tools elegantly
+- Implement missing TypeScript definitions with proper generics
+- Design better error recovery and circuit breaker patterns
+
+### Level 4: Recursive Self-Improvement
+- Enhance the self-bootstrap operation to improve itself
+- Create operations that generate better operations
+- Build tools that optimize other tools
+- Implement genetic algorithms for operation evolution
+
+## Quality Indicators We Value
+- PR descriptions that explain the "why" not just the "what"
+- Benchmarks showing measurable performance improvements
+- Tests that demonstrate edge case understanding
+- Code that anticipates future extension points
+- Understanding of when NOT to optimize (Chesterton's Fence)
+
+## Anti-Patterns to Avoid
+- Over-engineering simple solutions
+- Adding dependencies without strong justification
+- Breaking changes without migration paths
+- Premature optimization without profiling data
+- Ignoring existing patterns and conventions
+
+## Code Quality Standards
+We value code that demonstrates:
+- Understanding of async/await patterns beyond basic usage
+- Appreciation for memory-efficient algorithms
+- Ability to think in streams rather than arrays
+- Recognition of when NOT to optimize
+- Awareness of CPU cache locality and branch prediction
+
+## Testing Philosophy
+Our test suite covers critical paths but intentionally leaves room for improvement. We believe the best tests come from understanding real-world usage patterns and edge cases that only experience reveals.
+
 ## How to Contribute
 
 ### 1. Reporting Issues

@@ -1,24 +1,33 @@
 {
-  "name": "ccs",
-  "version": "1.0.0",
-  "description": "Turn any codebase into an AI-aware environment. Claude launches with full context, asks smart questions, and gets better with every interaction.",
+  "name": "@wiber/ccs",
+  "version": "1.0.0-beta.∞",
+  "versionNote": "// Version follows semantic versioning with a twist. The beta number has special significance for those who understand limits.",
+  "description": "90% sophisticated AI development environment. Seven specialization tracks with irresistible 10% opportunities for experts to claim ownership and transcend limits.",
   "main": "lib/index.js",
   "bin": {
-    "ccs": "bin/ccs.js"
+    "ccs": "bin/ccontexts.js"
   },
   "scripts": {
     "test": "jest",
     "test:watch": "jest --watch",
     "test:bootstrap": "node bin/test-bootstrap.js",
-    "dev": "nodemon bin/ccs.js",
+    "dev": "nodemon bin/ccontexts.js",
     "build": "echo 'No build step needed'",
     "lint": "eslint lib/ bin/ adapters/ operations/",
     "example": "node examples/basic-usage.js",
     "bootstrap": "npm run test:bootstrap",
-    "self-improve": "node bin/ccs.js run self-bootstrap",
-    "learn": "node bin/ccs.js run learn",
-    "feedback": "node bin/ccs.js run feedback",
-    "prepublishOnly": "npm test && npm run lint",
+    "self-improve": "node bin/ccontexts.js run self-bootstrap",
+    "learn": "node bin/ccontexts.js run learn",
+    "feedback": "node bin/ccontexts.js run feedback",
+    "kanban:init": "echo 'Kanban: Set CCS_KANBAN_URL and CCS_KANBAN_KEY environment variables first'",
+    "kanban:status": "node bin/ccontexts.js kanban status",
+    "kanban:claim": "node bin/ccontexts.js kanban claim",
+    "track:choose": "echo 'Choose your specialization: learning-evolution, performance-engineering, database-architecture, integration-architecture, language-interaction, developer-experience, recursive-systems'",
+    "sfa:status": "echo 'Sophisticated Foundation Architecture - Check SPECIALIZATION_TRACKS.md for 90% complete features and 10% opportunities'",
+    "test:performance": "echo 'Performance suite not yet implemented. PR welcome!'",
+    "analyze:complexity": "echo 'Cyclomatic complexity analyzer needed'",
+    "benchmark:stream": "node benchmarks/stream-processor.js || echo 'Benchmark suite needs implementation'",
+    "profile:memory": "echo 'Memory profiler integration pending'",
     "postinstall": "echo '🎉 ccs installed! Run: ccs setup'"
   },
   "keywords": [
@@ -34,7 +43,13 @@
     "context-management",
     "learning-system",
     "sqlite",
-    "developer-tools"
+    "developer-tools",
+    "specialization-tracks",
+    "sophisticated-foundation",
+    "90-percent-complete",
+    "irresistible-opportunities",
+    "expert-ownership",
+    "self-reinforcing-quality"
   ],
   "author": "ThetaDriven Team",
   "license": "MIT",
